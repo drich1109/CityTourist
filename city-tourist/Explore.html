@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Tourist Explorer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+<!-- Navigation -->
+<nav class="p-4 bg-gray-800">
+    <div class="container mx-auto flex justify-start items-center bg-gray-800">
+        <a href="#" class="text-white text-2xl font-bold font-mono">CITY TOURIST</a>
+        <ul class="flex space-x-3 justify-between">
+            <li><a href="#" class="text-white hover:text-gray-200 ml-4 font-bold ">SPOTLIGHT</a></li>
+            <li><a href="#" class="text-white hover:text-gray-200 ml-4 font-bold">EXPLORE</a></li>
+            <li><a href="#" class="text-white hover:text-gray-200 ml-4 font-bold">SIGHT</a></li>
+            <li><a href="#" class="text-white hover:text-gray-200 ml-4 font-bold">SOUND</a></li>
+            <li><a href="#" class="text-white hover:text-gray-200 ml-4 font-bold">GUIDES</a></li>
+            <li><a href="#" class="text-white hover:text-gray-200 ml-4 font-bold">CONTRIBUTORS</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<section class="py-12 mx-8 pl-8">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8 font-serif">Explore</h2>
+        <p class="italic text-right text-center text-2xl">From scenic beaches and landscapes to gastronomic feasts, let these articles take you there</p>
+        <hr class="my-12 border-t-2 border-gray-300">
+        <div class="grid grid-cols-3 gap-8">
+            <div class="col-span-2 grid grid-cols-2 grid-rows-2 gap-8">
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?beach" alt="Beach" class="w-full h-auto object-cover object-center">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">Tropical Paradise</h3>
+                        <p class="text-gray-700 mt-2">Experience the serene beauty of tropical beaches with crystal-clear waters and white sandy shores.</p>
+                    </div>
+                </div>
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?mountain" alt="Mountain" class="w-full h-auto object-cover object-center">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">Mountain Adventures</h3>
+                        <p class="text-gray-700 mt-2">Embark on thrilling mountain adventures and explore breathtaking landscapes.</p>
+                    </div>
+                </div>
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?city" alt="City" class="w-full h-auto object-cover object-center">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">Urban Exploration</h3>
+                        <p class="text-gray-700 mt-2">Discover the vibrant life and architectural marvels of bustling cities around the world.</p>
+                    </div>
+                </div>
+                <div class="relative bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/400x400/?nature" alt="Nature" class="w-full h-auto object-cover object-center">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">Nature Retreat</h3>
+                        <p class="text-gray-700 mt-2">Reconnect with nature in tranquil retreats surrounded by lush greenery and peaceful settings.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-l-2 border-gray-300 pl-8">
+                <div class="mb-4">
+                    <label for="search" class="block text-gray-700 text-lg font-bold mb-2">Search</label>
+                    <input type="text" id="search" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Search...">
+                </div>
+                <div class="mb-4">
+                    <label for="filter" class="block text-gray-700 text-lg font-bold mb-2">LUZON</label>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="filter" class="mr-2 leading-tight">
+                        <span class="text-gray-700">Albay</span>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="another-filter" class="mr-2 leading-tight">
+                        <span class="text-gray-700">Aurora</span>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="another-filter" class="mr-2 leading-tight">
+                        <span class="text-gray-700">Batanes</span>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="another-filter" class="mr-2 leading-tight">
+                        <span class="text-gray-700">Palawan</span>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="another-filter" class="mr-2 leading-tight">
+                        <span class="text-gray-700">Sorsogon</span>
+                    </div>
+                    <div>
+                        <hr class="my-12 border-t-2 border-gray-300">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="filter" class="block text-gray-700 text-lg font-bold mb-2">VISAYAS</label>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="filter" class="mr-2 leading-tight">
+                        <span class="text-gray-700">Aklan</span>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="another-filter" class="mr-2 leading-tight">
+                        <span class="text-gray-700">Bohol</span>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="another-filter" class="mr-2 leading-tight">
+                        <span class="text-gray-700">Cebu</span>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="another-filter" class="mr-2 leading-tight">
+                        <span class="text-gray-700">Leyte</span>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="another-filter" class="mr-2 leading-tight">
+                        <span class="text-gray-700">Siquijor</span>
+                    </div>
+                    <div>
+                        <hr class="my-12 border-t-2 border-gray-300">
+                    </div>
+                    <div class="mb-4">
+                        <label for="filter" class="block text-gray-700 text-lg font-bold mb-2">MINDANAO</label>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="filter" class="mr-2 leading-tight">
+                            <span class="text-gray-700">Camiguin</span>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="another-filter" class="mr-2 leading-tight">
+                            <span class="text-gray-700">Davao del Sur</span>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="another-filter" class="mr-2 leading-tight">
+                            <span class="text-gray-700">Davao Oriental</span>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="another-filter" class="mr-2 leading-tight">
+                            <span class="text-gray-700">Sorigao del Sur</span>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="another-filter" class="mr-2 leading-tight">
+                            <span class="text-gray-700">Sorigao del Norte</span>
+                        </div>
+                        <div>
+                            <hr class="my-12 border-t-2 border-gray-300">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pagination -->
+        <div class="mt-8 flex justify-center">
+            
+
+<nav aria-label="Page navigation">
+    <ul class="inline-flex -space-x-px text-sm">
+      <li>
+        <a href="#" class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Previous</a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center justify-center px-3 h-8 text-blue-600 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">1</a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+      </li>
+      <li>
+        <a href="#" aria-current="page" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">3</a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Next</a>
+      </li>
+    </ul>
+</section>
+
+<footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-center">
+        <div class="flex justify-center md:justify-start space-x-6 md:space-x-4"> 
+            <!-- Social Media Icons -->
+            <a href="#" class="text-white hover:text-gray-400 transition duration-300">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+            </a>
+            <a href="#" class="text-white hover:text-gray-400 transition duration-300">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 1 21 12.79z"></path>
+                </svg>
+            </a>
+            <a href="#" class="text-white hover:text-gray-400 transition duration-300">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+            </a>
+        </div>
+        <p>© 2024 Your Website. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
